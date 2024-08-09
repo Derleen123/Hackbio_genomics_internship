@@ -1,25 +1,25 @@
+# Gene Sequence Analysis Script
 
-Gene Sequence Analysis Script
+This repository contains a Bash script to download a gene sequence from NCBI, analyze the nucleotide composition, and calculate the GC content. The script also creates a summary file with the counts of each nucleotide.
 
-This Bash script allows the users to download a gene sequence from NCBI, analyze nucleotide occurrences, calculate the %GC content, and generate a report file. It's useful for molecular biology and bioinformatics research.
+## Script Overview
 
-Usage:
+The script performs the following tasks:
 
-Clone the repository or download the script.
-Ensure wget and awk are installed.
-Run the script in a Bash environment.
-Follow the prompts to input required information.
-Features:
+1. **Download Gene Sequence**: Fetches the FASTA sequence of the gene from NCBI using the provided URL.
+2. **Count Nucleotides**: Counts the number of occurrences of each nucleotide (A, G, C, T) in the sequence.
+3. **Calculate GC Content**: Calculates the percentage of the sequence that is composed of G and C nucleotides.
+4. **Create Summary File**: Outputs the nucleotide counts into a file named `derleen.fasta`.
 
-Download gene sequence from NCBI.
-Count occurrences of A, G, T, and C nucleotides.
-Calculate %GC content.
-Generate a report file with nucleotide counts.
-Dependencies:
+## Prerequisites
 
-Bash
-wget
-awk
-Contributing:
+To run this script, you'll need:
+- A Unix-like environment (e.g., Linux, macOS).
+- Basic command-line tools like `wget`, `awk`, `grep`, `wc`, `bc`, and `nano`.
 
-Contributions are welcome. Fork the repository, make changes, and submit a pull request.
+## Usage
+
+1. **Clone the Repository** (if applicable):
+   ```bash
+   git clone https://github.com/your-username/repository-name.git
+   cd repository-name
